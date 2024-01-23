@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8508cf51-1fe6-4578-b537-bf1ac42a0cf6": {
+      "ProjectGuid": "8508cf51-1fe6-4578-b537-bf1ac42a0cf6",
+      "DisplayName": "Movie",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "1179e362-973a-4b44-b728-855cfab7bf09": {
+      "ProjectGuid": "1179e362-973a-4b44-b728-855cfab7bf09",
+      "DisplayName": "MovieWorker",
+      "ColorIndex": 1
+    },
+    "9424224e-3648-471c-ad8e-fa0d59411b47": {
+      "ProjectGuid": "9424224e-3648-471c-ad8e-fa0d59411b47",
+      "DisplayName": "MovieWorker",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
