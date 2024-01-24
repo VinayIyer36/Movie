@@ -1,16 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Movie.Models.DB
 {
-    public class Award
+    public class ActorMovie
     {
         [Key]
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public int ActorMovieId { get; set; }
 
-        [ForeignKey("Movie")]
+        public int ActorId { get; set; }
         public int MovieId { get; set; }
         public Movie Movie { get; set; }
+        public Actor Actor { get; set; }
     }
 }

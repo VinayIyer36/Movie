@@ -8,6 +8,6 @@ namespace Movie.Models.DB
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public List<Movie> Movies { get; set; }
+        public virtual List<GenreMovie> GenreMovies { get; set; }
     }
 }

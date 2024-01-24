@@ -24,7 +24,7 @@ namespace Movie.Repository
 
         public int GetMovieCountByGenre(int genreId)
         {
-            return context.Genres.Where(x => x.Id == genreId).Select(x => x.Movies).Count();
+            return context.GenreMovies.Count(x => x.GenreId == genreId);
         }
 
         public void Delete(Genre entity)

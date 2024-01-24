@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vinay\\source\\repos\\Movie\\Movie.csproj": {}
+    "C:\\Users\\vinay\\Downloads\\Movie\\Movie\\Movie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vinay\\source\\repos\\Movie\\Movie.csproj": {
+    "C:\\Users\\vinay\\Downloads\\Movie\\Movie\\Movie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinay\\source\\repos\\Movie\\Movie.csproj",
+        "projectUniqueName": "C:\\Users\\vinay\\Downloads\\Movie\\Movie\\Movie.csproj",
         "projectName": "Movie",
-        "projectPath": "C:\\Users\\vinay\\source\\repos\\Movie\\Movie.csproj",
+        "projectPath": "C:\\Users\\vinay\\Downloads\\Movie\\Movie\\Movie.csproj",
         "packagesPath": "C:\\Users\\vinay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinay\\source\\repos\\Movie\\obj\\",
+        "outputPath": "C:\\Users\\vinay\\Downloads\\Movie\\Movie\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

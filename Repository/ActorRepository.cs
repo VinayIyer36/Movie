@@ -15,14 +15,12 @@ namespace Movie.Repository
         public Actor GetById(int actorId)
         {
             return context.Actors
-                .Include(x => x.Movies)
                 .Where(x => x.Id == actorId).FirstOrDefault();
         }
 
         public IEnumerable<Actor> GetAll()
         {
-            return context.Actors
-             .Include(x => x.Movies);
+            return context.Actors;
         }
 
         public void Add(Actor entity)

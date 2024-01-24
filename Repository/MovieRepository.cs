@@ -15,21 +15,19 @@ namespace Movie.Repository
         public Movie.Models.DB.Movie GetById(int movieId)
         {
             return context.Movies
-                .Include(x => x.Actors)
-                .Include(x => x.Genres)
-                .Include(x => x.Reviews)
-                .Include(x => x.Awards)
                 .Where(x => x.Id == movieId).FirstOrDefault();
         }
 
         public IEnumerable<Movie.Models.DB.Movie> GetMoviesByGenreId(int genreId)
         {
             return context.Movies
-                .Include(x => x.Actors)
-                .Include(x => x.Genres)
-                .Include(x => x.Reviews)
-                .Include(x => x.Awards)
-                .Where(x => x.Genres.Any(y => y.Id == genreId));
+                .Where(x => x.GenreMovies.Any(y => y.GenreId == genreId));
+        }
+
+        public IEnumerable<Movie.Models.DB.Movie> GetMoviesByActorId(int actorId)
+        {
+            return context.Movies
+                .Where(x => x.ActorMovies.Any(y => y.ActorId == actorId));
         }
 
         public void Add(Movie.Models.DB.Movie entity)

@@ -52,14 +52,14 @@ namespace Movie.Controllers
         {
             using (UnitOfWork UoW = new UnitOfWork())
             {
-                Actor actor = UoW.ActorRepo.GetById(actorId);
+                IEnumerable<Movie.Models.DB.Movie> movies = UoW.MovieRepo.GetMoviesByGenreId(actorId);
 
-                if (actor == null)
+                if (movies.Count() == 0)
                 {
                     _logger.LogInformation("Actor with Id: {actor} not found", actorId);
                     return NotFound("Actor not found");
                 }
-                return Ok(actor);
+                return Ok(movies);
             }
         }
     }

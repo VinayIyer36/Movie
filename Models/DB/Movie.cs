@@ -18,8 +18,8 @@ namespace Movie.Models.DB
         public int DirectorId { get; set; }
         public Director Director { get; set; }
 
-        public virtual List<Actor> Actors { get; set; }
-        public virtual List<Genre> Genres { get; set; }
+        public virtual List<ActorMovie> ActorMovies { get; set; }
+        public virtual List<GenreMovie> GenreMovies { get; set; }
         public virtual List<Review> Reviews { get; set; }
         public virtual List<Award> Awards { get; set; }
     }
